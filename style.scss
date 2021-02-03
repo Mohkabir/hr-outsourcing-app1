@@ -7,14 +7,6 @@ img{
 
 $brown : #E86C00;
 
-@keyframes navi{
-  from{height: 0%;}
-  to{height: 180px;}
-}
-@keyframes fade{
-  from{opacity:0 ;}
-  to{opacity: 1;}
-}
 body{
   font-size: 16px;
   background-color: #E2E2E2;
@@ -22,7 +14,9 @@ body{
   margin: 0;
   header{
     background-color: #ffffff;
+    z-index: 200;
     .navigation{
+      
       .logo{
         font-size: 30px;
         text-align: left;
@@ -43,13 +37,6 @@ body{
           font-size: 20px;
           color: #E86C00;
         }
-        .display{
-          display: block;
-          animation-name: navi;
-          animation-duration: 1s;
-          animation-timing-function: ease-in-out;
-          
-        }
         ul{
           list-style-type: none;
           position: fixed;
@@ -60,16 +47,14 @@ body{
           padding: 0;
           margin: 0;
           padding-bottom:$brown ;
-          animation-name: navi;
-          animation-duration: 1s;
-          animation-timing-function: ease-in-out;
           display: none;
           li{
             a{
               text-decoration: none;
               padding: 5px;
-              display: block;
               border: 1px solid #DDDDDD;
+              display: block;
+              
             }
           }
         }
@@ -198,14 +183,18 @@ body{
   .section8{
     h2{
       padding: 0 1em;
+      text-align: center;
     }
     .sec8_box_wrapper{
       display: flex;
       flex-direction: column;
+      background-color: #002147;
+      z-index: -1;
       .sec8_box{
         text-align: center;
         padding: 1em ;
         margin: 0.5em 0;
+        
         button{
           padding: 13px;
           border-radius: 5px;
@@ -213,7 +202,9 @@ body{
         color: #ffffff;
       }
       .blue{
-        background-color: #2C184D;
+    //    background-color: #2C184D;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(160,45,253,0.3311369225424545) 100%);
       }
       .brown{
         background-color: #5A3642;

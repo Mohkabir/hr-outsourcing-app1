@@ -1,7 +1,5 @@
-
-let bar = document.querySelector(".fa-bars");
-let nav = document.querySelector(".nav");
-
-bar.onclick = ()=>{
-  nav.classList.toggle("display");
-}
+$("document").ready(function(){
+  $(".fa-bars").click(function(){
+    $(".nav_content").slideToggle(500);
+  });
+});

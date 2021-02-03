@@ -7,42 +7,6 @@ img {
   width: 100%;
 }
 
-@-webkit-keyframes navi {
-  from {
-    height: 0%;
-  }
-  to {
-    height: 180px;
-  }
-}
-
-@keyframes navi {
-  from {
-    height: 0%;
-  }
-  to {
-    height: 180px;
-  }
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 body {
   font-size: 16px;
   background-color: #E2E2E2;
@@ -52,6 +16,7 @@ body {
 
 body header {
   background-color: #ffffff;
+  z-index: 200;
 }
 
 body header .navigation .logo {
@@ -78,16 +43,6 @@ body header .navigation nav .fa {
   color: #E86C00;
 }
 
-body header .navigation nav .display {
-  display: block;
-  -webkit-animation-name: navi;
-          animation-name: navi;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-
 body header .navigation nav ul {
   list-style-type: none;
   position: fixed;
@@ -98,20 +53,14 @@ body header .navigation nav ul {
   padding: 0;
   margin: 0;
   padding-bottom: #E86C00;
-  -webkit-animation-name: navi;
-          animation-name: navi;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
   display: none;
 }
 
 body header .navigation nav ul li a {
   text-decoration: none;
   padding: 5px;
-  display: block;
   border: 1px solid #DDDDDD;
+  display: block;
 }
 
 body header .header_img {
@@ -286,6 +235,7 @@ body .section7 ul li {
 
 body .section8 h2 {
   padding: 0 1em;
+  text-align: center;
 }
 
 body .section8 .sec8_box_wrapper {
@@ -296,6 +246,8 @@ body .section8 .sec8_box_wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #002147;
+  z-index: -1;
 }
 
 body .section8 .sec8_box_wrapper .sec8_box {
@@ -311,7 +263,9 @@ body .section8 .sec8_box_wrapper .sec8_box button {
 }
 
 body .section8 .sec8_box_wrapper .blue {
-  background-color: #2C184D;
+  background: #22c1c3;
+  background: -webkit-gradient(linear, left bottom, left top, from(#22c1c3), to(rgba(160, 45, 253, 0.331137)));
+  background: linear-gradient(0deg, #22c1c3 0%, rgba(160, 45, 253, 0.331137) 100%);
 }
 
 body .section8 .sec8_box_wrapper .brown {
